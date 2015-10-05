@@ -1,0 +1,13 @@
+{
+  "AppSettings": {
+    "SiteTitle": "SRS"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-SRS-56517c0d-853f-45b2-b77d-018aded4e243;Trusted_Connection=True;MultipleActiveResultSets=true"
+    },
+    "DbConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=srsdb;Trusted_Connection=True;MultipleActiveResultSets=true;Integrated Security=True"
+    }
+  }
+}

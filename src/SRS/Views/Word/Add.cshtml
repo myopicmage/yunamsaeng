@@ -1,0 +1,34 @@
+﻿<div ng-controller="WordAddCtrl as current" layout="column" flex layout-fill layout-padding>
+    <md-content layout="column" layout-padding class="md-padding" layout-align="top center">
+        <h2>add word.</h2>
+        <div layout="row" flex>
+            <md-input-container>
+                <label>word.</label>
+                <input type="text" ng-model="current.newword" />
+            </md-input-container>
+            <md-input-container>
+                <label>english.</label>
+                <input type="text" ng-model="current.newenglish" />
+            </md-input-container>
+            <md-autocomplete md-no-cache="current.noCache"
+                             md-selected-item="current.selectedItem"
+                             md-search-text="current.searchText"
+                             md-selected-item-change="current.selectedItemChange(item)"
+                             md-items="item in current.querySearch(current.searchText)"
+                             md-item-text="item.display"
+                             md-min-length="1"
+                             placeholder="what conjugation is this?"
+                             flex>
+                <md-item-template>
+                    <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                </md-item-template>
+                <md-not-found>
+                    never seen "{{ctrl.searchText}}" before! do you need to add a form?
+                </md-not-found>
+            </md-autocomplete>
+        </div>
+        <div layout="row">
+            <md-button class="md-raised">save.</md-button>
+        </div>
+    </md-content>
+</div>

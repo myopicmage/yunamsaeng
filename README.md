@@ -1,7 +1,7 @@
 # yunamsaeng
 i'm learning korean!
 
-korean is hard!
+remembering vocab is hard!
 
 and there's no duolingo-style SRS for korean (well there's memrise and anki i guess?) so i wanted to build something that works the way i work.
 

@@ -38,5 +38,14 @@ namespace SRS.Controllers {
 
             return Json(forms);
         }
+
+        public IActionResult addform() {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult addform(string newform) {
+            return View();
+        }
     }
 }

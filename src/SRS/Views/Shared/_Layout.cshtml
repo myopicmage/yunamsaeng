@@ -23,49 +23,37 @@
                 <h1 class="md-toolbar-tools">menu.</h1>
             </md-toolbar>
             <md-content layout="column" flex class="md-padding">
-                <p>
-                    <md-tooltip>
-                        DO YOU KNOW HOW HARD THAT IS
-                    </md-tooltip>
-                    i'm looking for romanized korean
-                </p>
-                <p>
-                    <md-tooltip>
-                        we are legion.
-                    </md-tooltip>
-                    who are you people?!
-                </p>
-                <p>
-                    <md-tooltip>
-                        for myself. how did you get here again?
-                    </md-tooltip>
-                    why did you build this
-                </p>
-                <p>
-                    <md-tooltip>
-                        your local humane society. adopt, don't buy.
-                    </md-tooltip>
-                    where can i get a puppy
-                </p>
-                <p>
-                    <md-tooltip>
-                        that would require me to build an auth system
-                    </md-tooltip>
-                    logging in might help
-                </p>
-                <p>
-                    <md-tooltip>
-                        god you're useless
-                    </md-tooltip>
-                    can you tell i'm just trying to fill this in
-                </p>
+                <md-list>
+                    <md-list-item>
+                        <md-button ng-href="/" flex>
+                            home.
+                        </md-button>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-button ng-href="/reviews/list" flex>
+                            review cloud.
+                        </md-button>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-button ng-href="/reviews/timed" flex>
+                            timed reviews.
+                        </md-button>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-button ng-href="/word/add" flex style="text-align: center;">
+                            add a new word.
+                        </md-button>
+                    </md-list-item>
+                    <md-list-item>
+                        <md-button ng-href="/word/addform" flex style="text-align: center;">
+                            add a new word form.
+                        </md-button>
+                    </md-list-item>
+                </md-list>
             </md-content>
         </md-sidenav>
         <div id="content" flex layout-fill>
             @RenderBody()
-            @*<footer style="position: absolute; bottom: 2%; right: 2%;">
-                    &copy; me @DateTime.Now.Year
-                </footer>*@
         </div>
     </div>
 

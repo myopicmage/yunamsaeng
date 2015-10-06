@@ -1,0 +1,22 @@
+﻿<div ng-controller="IndexCtrl as current" layout="column" flex layout-fill layout-padding>
+    <md-content layout="column" layout-padding class="md-padding" layout-align="top center">
+        <h2>Current Set: Timed Reviews</h2>
+        <md-progress-linear md-mode="determinate" value="67"></md-progress-linear>
+
+        <md-toolbar>
+            <h3 class="md-toolbar-tools">what does this mean?</h3>
+        </md-toolbar>
+
+        <div layout-padding>
+            <h1 style="text-align: center">먹다</h1>
+            <md-input-container style="text-align: center;">
+                <label style="text-align: center;">english</label>
+                <input style="text-align: center;" ng-model="current.input" />
+            </md-input-container>
+            <div style="margin-top: 15px;">
+                <md-button class="md-raised" style="float: left;">quit.</md-button>
+                <md-button class="md-raised" style="float: right;">save.</md-button>
+            </div>
+        </div>
+    </md-content>
+</div>
